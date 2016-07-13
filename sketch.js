@@ -1,19 +1,26 @@
 var genbutton;
 var genslider;
 var running = true;
+
+
 function setup() {
 
   frameRate(30);
-  createCanvas(710, 400);
+  createCanvas(window.innerWidth,window.innerHeight);
 
   //these are all for the labels and sliders
-  genbutton = createButton("stop");
+  genbutton = createButton("STOP");
+  genbutton.mouseClicked(turnonoff);
+  genbutton.position((width/2)-50,(height/2)-90);
+  genbutton.class("sim-button");
+  
+  genbutton = createButton("STOP");
   genbutton.mouseClicked(turnonoff);
   genbutton.position(20,30);
   genbutton.class("sim-button");
    
   genslider = createSlider(5, 50, 20);
-  genslider.position(150,40);
+  genslider.position(20,100);
   genslider.class("sim-slider");
 
 }
@@ -29,15 +36,16 @@ function turnonoff() {
     if (!running){
       running = true;
       loop();
-      genbutton.html("stop");
+      genbutton.html("STOP");
       return
     }
 
     if (running){
       running = false;
       noLoop()
-      genbutton.html("start");
+      genbutton.html("START");
       return
     }
+
 
 }
