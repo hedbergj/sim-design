@@ -55,7 +55,7 @@ background:lightgray;
 input[type=range] {
   -webkit-appearance: none;
   margin: 18px 0;
-  width:400px;
+ /* width:400px;*/
 }
 input[type=range]:focus {
   outline: none;
