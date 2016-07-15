@@ -253,7 +253,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 /**/
 .onoffswitch {
-    position: absolute; top:320px;left:20px;
+    position: absolute; top:320px;left:25px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
