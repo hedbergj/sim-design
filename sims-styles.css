@@ -276,7 +276,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .onoffswitch-inner:before {
     content: "ON";
-    padding-left: 9px;
+    padding-left: 8px;
     background-color: #94c6d8; color: #FFFFFF;
     
 }
