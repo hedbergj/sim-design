@@ -28,7 +28,7 @@ function setup() {
 function draw() {
   background(255);
   fill(230,40,40);
- ellipse((width/2)+random(0,5),(height/2)+random(0,5),genslider.value(),genslider.value());
+ ellipse((width/2)+random(0,5),((height/2) +200),genslider.value(),genslider.value());
 }
 
 function turnonoff() {
