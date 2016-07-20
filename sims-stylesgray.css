@@ -319,6 +319,7 @@ input[type=range]:focus::-ms-fill-upper {
 .onoffswitch-inner:before {
     content: "ON";
     padding-left: 8px;
+    padding-right: 4px;
     background-color: #9a9a9a; color: #FFFFFF;
     
 }
