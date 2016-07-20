@@ -6,7 +6,7 @@ var running = true;
 function setup() {
 
   frameRate(30);
-  createCanvas(screen.Width,screen.Height);
+  createCanvas(window.Width,window.Height);
 
   //these are all for the labels and sliders
   genbutton = createButton("STOP");
