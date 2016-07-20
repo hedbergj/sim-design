@@ -6,9 +6,9 @@ margin-left:200px;
 .buttonlinks{
 		margin-top:10px;
 		margin-left:300px;
-}
-}
 
+}
+}
 .toolbar{
 position:absolute;
 width:100%;
@@ -133,7 +133,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 30px;
   width: 20px;
   border-radius: 3px;
-  background: #94c6d8;
+  background: #e6e6e6;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -12px;
@@ -156,7 +156,7 @@ input[type=range]::-moz-range-thumb {
   height: 30px;
   width: 20px;
   border-radius: 3px;
-  background: #94c6d8;
+  background: #e6e6e6;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -12px;
@@ -189,7 +189,7 @@ input[type=range]::-ms-thumb {
   height: 30px;
   width: 20px;
   border-radius: 3px;
-  background: #94c6d8;
+  background: #e6e6e6;
   cursor: pointer;
 }
 input[type=range]:focus::-ms-fill-lower {
@@ -222,7 +222,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 25px;
   width: 18px;
   border-radius: 3px;
-  background: #94c6d8;
+  background: #e6e6e6;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -10px;
@@ -245,7 +245,7 @@ input[type=range]::-moz-range-thumb {
   height: 30px;
   width: 20px;
   border-radius: 3px;
-  background: #94c6d8;
+  background: #9a9a9a;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -12px;
@@ -278,7 +278,7 @@ input[type=range]::-ms-thumb {
   height: 30px;
   width: 20px;
   border-radius: 3px;
-  background: #94c6d8;
+  background: #9a9a9a;
   cursor: pointer;
 }
 input[type=range]:focus::-ms-fill-lower {
@@ -319,19 +319,19 @@ input[type=range]:focus::-ms-fill-upper {
 .onoffswitch-inner:before {
     content: "ON";
     padding-left: 8px;
-    background-color: #94c6d8; color: #FFFFFF;
+    background-color: #9a9a9a; color: #FFFFFF;
     
 }
 .onoffswitch-inner:after {
     content: "OFF";
     padding-right: 5px;
-    background-color: #a5a5a5; color: #FFFFFF;
+    background-color: #747474; color: #FFFFFF;
     text-align: right;
     
 }
 .onoffswitch-switch {
     display: block; width: 33px; margin: -6px;
-    background: #A1A1A1;
+    background: #e6e6e6;
     position: absolute; top: 0; bottom: 0;
     right: 41px;
     border:1px solid #a1a1a1; a; border-radius: 8px;
@@ -372,13 +372,13 @@ input[type=range]:focus::-ms-fill-upper {
     content: "ON";
     padding-left: 9px;
     padding-right:2px;
-    background-color: #94c6d8; color: #FFFFFF;
+    background-color: #9a9a9a; color: #FFFFFF;
     
 }
 .onoffswitch-inner:after {
     content: "OFF";
     padding-right: 5px;
-    background-color: #a5a5a5; color: #FFFFFF;
+    background-color: #747474; color: #FFFFFF;
     text-align: right;
     
 }
@@ -411,16 +411,16 @@ input[type=range]:focus::-ms-fill-upper {
   text-align: center;
   outline: none;
   color: #fff;
-  background-color: #94c6d8;
+  background-color: #747474;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
-.sim-button:hover {background-color: #80a7b5}
+.sim-button:hover {background-color: #58585a}
 
 .sim-button:active {
-  background-color: #80a7b5;
+  background-color: #58585a;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -438,16 +438,16 @@ input[type=range]:focus::-ms-fill-upper {
   text-align: center;
   outline: none;
   color: #fff;
-  background-color: #94c6d8;
+  background-color: #747474;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
-.sim-button:hover {background-color: #80a7b5}
+.sim-button:hover {background-color: #58585a}
 
 .sim-button:active {
-  background-color: #80a7b5;
+  background-color: #58585a;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
