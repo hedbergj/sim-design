@@ -19,16 +19,17 @@ function setup() {
   genbutton.position(20,30);
   genbutton.class("sim-button");
    
-  genslider = createSlider(5, 50, 20);
+  genslider = createSlider(5, 1000, 20);
   genslider.position(20,100);
   genslider.class("sim-slider");
+  
 
 }
 
 function draw() {
   background(255);
   fill(230,40,40);
- ellipse((width/2)+random(0,5),((height/2) +200),genslider.value(),genslider.value());
+ ellipse((width/2)+random(0,5),((height/2) +200)+random(0,5),genslider.value(),genslider.value());
 }
 
 function turnonoff() {
@@ -46,6 +47,35 @@ function turnonoff() {
       genbutton.html("START");
       return
     }
+}
+function turnonoff2() {
+    if (!running){
+      running = true;
+      loop();
+      genbutton2.html("STOP");
+      return
+    }
 
+    if (running){
+      running = false;
+      noLoop()
+      genbutton2.html("START");
+      return
+    }
+}
 
+function turnonoff3() {
+    if (!running){
+      running = true;
+      loop();
+      genbutton3.html("STOP");
+      return
+    }
+
+    if (running){
+      running = false;
+      noLoop()
+      genbutton3.html("START");
+      return
+    }
 }
