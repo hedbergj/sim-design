@@ -29,7 +29,7 @@ function setup() {
 function draw() {
   background(255);
   fill(230,40,40);
- ellipse((width/2)+random(0,5),((height/2) +200)+random(0,5),genslider.value(),genslider.value());
+ ellipse((width/2)+random(0,5),((height/2) +400)+random(0,5),genslider.value(),genslider.value());
 }
 
 function turnonoff() {
@@ -48,34 +48,5 @@ function turnonoff() {
       return
     }
 }
-function turnonoff2() {
-    if (!running){
-      running = true;
-      loop();
-      genbutton2.html("STOP");
-      return
-    }
 
-    if (running){
-      running = false;
-      noLoop()
-      genbutton2.html("START");
-      return
-    }
-}
-
-function turnonoff3() {
-    if (!running){
-      running = true;
-      loop();
-      genbutton3.html("STOP");
-      return
-    }
-
-    if (running){
-      running = false;
-      noLoop()
-      genbutton3.html("START");
-      return
-    }
 }
