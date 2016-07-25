@@ -2,6 +2,8 @@ var genbutton;
 var genbutton2;
 var genbutton3;
 var genslider;
+var genslider2;
+var genslider3;
 var running = true;
 
 
@@ -19,12 +21,12 @@ function setup() {
   genbutton2 = createButton("STOP");
   genbutton2.mouseClicked(turnonoff);
   genbutton2.position(300,30);
-  genbutton2.class("sim-button.gray");
+  genbutton2.class("sim-button gray");
   
   genbutton3 = createButton("STOP");
   genbutton3.mouseClicked(turnonoff);
-  genbutton3.position(150,30);
-  genbutton3.class("sim-button.red");
+  genbutton3.position(600,30);
+  genbutton3.class("sim-button red");
   
   genbutton = createButton("STOP");
   genbutton.mouseClicked(turnonoff);
@@ -34,6 +36,15 @@ function setup() {
   genslider = createSlider(5, 1000, 20);
   genslider.position(20,100);
   genslider.class("sim-slider");
+  
+  genslider2 = createSlider(5, 1000, 20);
+  genslider2.position(300,100);
+  genslider2.class("sim-slider");
+  
+  genslider3 = createSlider(5, 1000, 20);
+  genslider3.position(600,100);
+  genslider3.style("sim-slider");
+  genslider3.class("sim-slider");
   
 
 }

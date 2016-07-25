@@ -83,31 +83,6 @@ left:90%
 }
 
 
-.sim-slider{
-@track-color: #424242;
-@thumb-color: #555bc8;
-
-@thumb-radius: 8px;
-@thumb-height: 30px;
-@thumb-width: 30px;
-@thumb-shadow-size: 1px;
-@thumb-shadow-blur: 1px;
-@thumb-shadow-color: #111;
-@thumb-border-width: 1px;
-@thumb-border-color: white;
-
-@track-width: 100%;
-@track-height: 10px;
-@track-shadow-size: 2px;
-@track-shadow-blur: 2px;
-@track-shadow-color: #222;
-@track-border-width: 1px;
-@track-border-color: black;
-
-@track-radius: 5px;
-@contrast: 5%;
-}
-
 
 /*Track stuff */
 input[type=range] {
@@ -400,6 +375,7 @@ input[type=range]:focus::-ms-fill-upper {
     right: 0px; 
 }
 }
+/**/
 .sim-button {
   margin:360px 0;
   display: inline-block;
@@ -425,18 +401,8 @@ input[type=range]:focus::-ms-fill-upper {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 .sim-button.red {
-  margin:360px 0;
-  display: inline-block;
-  width:100px;
-  padding: 15px 25px;
-  font-size: 15px;
-  font-family:Helvetica, sans-serif;
-  font-weight:bold;
-  cursor: pointer;
-  text-align: center;
-  outline: none;
-  color: #fff;
   background-color: #b27775;
 }
 
@@ -444,8 +410,6 @@ input[type=range]:focus::-ms-fill-upper {
 
 .sim-button.red:active {
   background-color: #9f4b48;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
 }
 
 .sim-button.gray{
@@ -494,4 +458,4 @@ input[type=range]:focus::-ms-fill-upper {
 .sim-button.red:active {
   background-color: #9f4b48;
 }
-
+}
