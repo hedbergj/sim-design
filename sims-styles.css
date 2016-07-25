@@ -319,7 +319,7 @@ input[type=range]:focus::-ms-fill-upper {
 .onoffswitch-inner:before {
     content: "ON";
     padding-left: 8px;
-    padding-right: 4px;
+    padding-right: 2px;
     background-color: #94c6d8; color: #FFFFFF;
     
 }
@@ -425,6 +425,38 @@ input[type=range]:focus::-ms-fill-upper {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.sim-button.red {
+  margin:360px 0;
+  display: inline-block;
+  width:100px;
+  padding: 15px 25px;
+  font-size: 15px;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #b27775;
+}
+
+.sim-button.red:hover{background-color: #9f4b48;}
+
+.sim-button.red:active {
+  background-color: #9f4b48;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.sim-button.gray{
+	background-color: #747474;
+}
+
+.sim-button.gray:hover{background-color: #58585a;}
+
+.sim-button.gray:active {
+  background-color: #58585a;
+}
 
 @media screen and (min-width: 40.5em) {
 .sim-button {
@@ -445,13 +477,21 @@ input[type=range]:focus::-ms-fill-upper {
   box-shadow: 0 9px #999;
 }
 
-.sim-button:hover {background-color: #80a7b5}
+.sim-button:hover {background-color: #80a7b5l;}
 
 .sim-button:active {
   background-color: #80a7b5;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+.sim-button.red{
+	background-color: #b27775;
 }
 
+.sim-button.red:hover{background-color: #9f4b48;}
+
+.sim-button.red:active {
+  background-color: #9f4b48;
+}
 
