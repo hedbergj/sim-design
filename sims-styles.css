@@ -4,8 +4,8 @@ margin-left:200px;
 }
 @media screen and (min-width: 40.5em) {
 .buttonlinks{
-		margin-top:10px;
-		margin-left:300px;
+		margin-top:400px;
+		margin-left:10px;
 }
 }
 
@@ -266,9 +266,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 
 
-
-
-/**/
+/* ON AND OFF SWITCH*/
 .onoffswitch {
     position: absolute; top:320px;left:25px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
@@ -321,6 +319,7 @@ input[type=range]:focus::-ms-fill-upper {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
 }
+
 @media screen and (min-width: 40.5em) {
 .onoffswitch {
     position: absolute; top:160px;left:20px;
@@ -375,7 +374,9 @@ input[type=range]:focus::-ms-fill-upper {
     right: 0px; 
 }
 }
-/**/
+
+s
+/* SIM BUTTON */
 .sim-button {
   margin:360px 0;
   display: inline-block;
@@ -403,6 +404,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .sim-button.red {
+ 
   background-color: #b27775;
 }
 
@@ -413,6 +415,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .sim-button.gray{
+
 	background-color: #747474;
 }
 
@@ -450,6 +453,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .sim-button.red{
+	margin:3px 0;
 	background-color: #b27775;
 }
 
@@ -457,5 +461,15 @@ input[type=range]:focus::-ms-fill-upper {
 
 .sim-button.red:active {
   background-color: #9f4b48;
+}
+.sim-button.gray{
+	margin:3px 0;
+	background-color: #747474;
+}
+
+.sim-button.gray:hover{background-color: #58585a;}
+
+.sim-button.gray:active {
+  background-color: #58585a;
 }
 }
