@@ -35,16 +35,15 @@ function setup() {
    
   genslider = createSlider(5, 1000, 20);
   genslider.position(20,100);
-  genslider.class("sim-slider");
+  genslider.class("sim-sliderb");
   
   genslider2 = createSlider(5, 1000, 20);
   genslider2.position(300,100);
-  genslider2.class("sim-slider");
+  genslider2.class("sim-sliderG");
   
   genslider3 = createSlider(5, 1000, 20);
   genslider3.position(600,100);
-  genslider3.style("sim-slider");
-  genslider3.class("sim-slider");
+  genslider3.class("sim-sliderR");
   
 
 }
