@@ -1,90 +1,15 @@
 
+/*sliders*/
 
-.toolbar{
-position:absolute;
-width:100%;
-height:500px;
-background:lightgray
-
-
-}
-
-@media screen and (min-width: 40.5em) {
-.toolbar{
-position:absolute;
-width:100%;
-height:200px;
-background:lightgray;
-}
-}
-.displayed{
-	width: 150px;position:absolute;top:10%;left:30%;
-}
-@media screen and (min-width: 40.5em) {
-.displayed{
-position:absolute;
-width:150px;
-top:10%;
-left:90%
-}
-}
-/*
-.sim-button {
-	box-shadow:inset 1px 1px 0px 0px #9acc85;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #94c6d8), color-stop(1, #94c6d8));
-	background:-moz-linear-gradient(top, #94c6d8 5%, #5cafcd 100%);
-	background:-webkit-linear-gradient(top, #94c6d8 5%, #5cafcd 100%);
-	background:-o-linear-gradient(top, #94c6d8 5%, #5cafcd 100%);
-	background:-ms-linear-gradient(top, #94c6d8 5%, #5cafcd 100%);
-	background:linear-gradient(to bottom, #94c6d8 5%, #5cafcd 100%);
-	background-color:#94c6d8;
-	border-radius:6px;
-	border:1px solid #5cafcd;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Helvetica;
-	font-size:13px;
-	font-weight:bold;
-	padding:4px 16px;
-	text-decoration:none;
-}
-.sim-button:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68a54b), color-stop(1, #74ad5a));
-	background:-moz-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
-	background:-webkit-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
-	background:-o-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
-	background:-ms-linear-gradient(top, #68a54b 5%, #74ad5a 100%);
-	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
-	background-color:#68a54b;
-}
-*/
-.sim-slider {
-
-}
-
-.buttonimage {
-	position:absolute;
-	z-index: 100;
-	border-style: solid;
-    border-width: 6px 3px 3px 6px;
-	height:84px;
-	width:132px;
-	background-color:purple;
-}
-
-
-
-/*Track stuff */
-input[type=range].sim-sliderb {
+input[type=range].sim-slider {
   -webkit-appearance: none;
-  margin: 150px 0;
-  /*width:400px;*/
 }
-input[type=range].sim-sliderb:focus {
+
+input[type=range].sim-slider:focus {
   outline: none;
 }
-input[type=range].sim-sliderb::-webkit-slider-runnable-track {
+
+input[type=range].sim-slider::-webkit-slider-runnable-track {
   /*width: 100%;*/
   height: 8.4px;
   cursor: pointer;
@@ -93,7 +18,8 @@ input[type=range].sim-sliderb::-webkit-slider-runnable-track {
   border-radius: 1.3px;
   border: 0.2px solid #898989;
 }
-input[type=range].sim-sliderb::-webkit-slider-thumb {
+
+input[type=range].sim-slider::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 30px;
@@ -104,9 +30,10 @@ input[type=range].sim-sliderb::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
 }
-input[type=range].sim-sliderb:focus::-webkit-slider-runnable-track {
+
+input[type=range].sim-slider:focus::-webkit-slider-runnable-track {
 }
-input[type=range].sim-sliderb::-moz-range-track {
+input[type=range].sim-slider::-moz-range-track {
   /*width: 100%;*/
   height: 7.4px;
   cursor: pointer;
@@ -116,7 +43,7 @@ input[type=range].sim-sliderb::-moz-range-track {
   border: 0.2px solid #898989;
   background:white;
 }
-input[type=range].sim-sliderb::-moz-range-thumb {
+input[type=range].sim-slider::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 30px;
@@ -127,7 +54,7 @@ input[type=range].sim-sliderb::-moz-range-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
 }
-input[type=range].sim-sliderb::-ms-track {
+input[type=range].sim-slider::-ms-track {
   /*width: 100%;*/
   height: 8.4px;
   cursor: pointer;
@@ -137,19 +64,19 @@ input[type=range].sim-sliderb::-ms-track {
   border-width: 16px;
   color: white;
 }
-input[type=range].sim-sliderb::-ms-fill-lower {
+input[type=range].sim-slider::-ms-fill-lower {
   background: white;
   border: 0.2px solid #898989;
   border-radius: 1.3px;
   box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
 }
-input[type=range].sim-sliderb::-ms-fill-upper {
+input[type=range].sim-slider::-ms-fill-upper {
   background: white;
   border: 0.2px solid #898989;
   border-radius: 1.3px;
   box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
 }
-input[type=range].sim-sliderb::-ms-thumb {
+input[type=range].sim-slider::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 30px;
@@ -158,22 +85,25 @@ input[type=range].sim-sliderb::-ms-thumb {
   background: #94c6d8;
   cursor: pointer;
 }
-input[type=range].sim-sliderb:focus::-ms-fill-lower {
+input[type=range].sim-slider:focus::-ms-fill-lower {
   background: white;
 }
-input[type=range].sim-sliderb:focus::-ms-fill-upper {
+input[type=range].sim-slider:focus::-ms-fill-upper {
   background: white;
 }
+
 @media screen and (min-width: 40.5em) {
-  input[type=range].sim-sliderb {
+  input[type=range].sim-slider {
   -webkit-appearance: none;
   margin: 18px 0;
   /*width:400px;*//*adjust of slider here*/
 }
-input[type=range].sim-sliderb:focus {
+
+input[type=range].sim-slider:focus {
   outline: none;
 }
-input[type=range].sim-sliderb::-webkit-slider-runnable-track {
+
+input[type=range].sim-slider::-webkit-slider-runnable-track {
   /*width: 100%;*/
   height: 8.4px;
   cursor: pointer;
@@ -182,7 +112,8 @@ input[type=range].sim-sliderb::-webkit-slider-runnable-track {
   border-radius: 1.3px;
   border: 0.2px solid #898989;
 }
-input[type=range].sim-sliderb::-webkit-slider-thumb {
+
+input[type=range].sim-slider::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 25px;
@@ -193,9 +124,11 @@ input[type=range].sim-sliderb::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -10px;
 }
-input[type=range].sim-sliderb:focus::-webkit-slider-runnable-track {
+
+input[type=range].sim-slider:focus::-webkit-slider-runnable-track {
 }
-input[type=range].sim-sliderb::-moz-range-track {
+
+input[type=range].sim-slider::-moz-range-track {
   /*width: 100%;*/
   height: 7.4px;
   cursor: pointer;
@@ -205,7 +138,7 @@ input[type=range].sim-sliderb::-moz-range-track {
   border: 0.2px solid #898989;
   background:white;
 }
-input[type=range].sim-sliderb::-moz-range-thumb {
+input[type=range].sim-slider::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 30px;
@@ -216,7 +149,7 @@ input[type=range].sim-sliderb::-moz-range-thumb {
   -webkit-appearance: none;
   margin-top: -12px;
 }
-input[type=range].sim-sliderb::-ms-track {
+input[type=range].sim-slider::-ms-track {
   /*width: 100%;*/
   height: 8.4px;
   cursor: pointer;
@@ -226,19 +159,19 @@ input[type=range].sim-sliderb::-ms-track {
   border-width: 16px;
   color: white;
 }
-input[type=range].sim-sliderb::-ms-fill-lower {
+input[type=range].sim-slider::-ms-fill-lower {
   background: white;
   border: 0.2px solid #898989;
   border-radius: 1.3px;
   box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
 }
-input[type=range].sim-sliderb::-ms-fill-upper {
+input[type=range].sim-slider::-ms-fill-upper {
   background: white;
   border: 0.2px solid #898989;
   border-radius: 1.3px;
   box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
 }
-input[type=range].sim-sliderb::-ms-thumb {
+input[type=range].sim-slider::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 30px;
@@ -247,707 +180,41 @@ input[type=range].sim-sliderb::-ms-thumb {
   background: #94c6d8;
   cursor: pointer;
 }
-input[type=range].sim-sliderb:focus::-ms-fill-lower {
+input[type=range].sim-slider:focus::-ms-fill-lower {
   background: white;
 }
-input[type=range].sim-sliderb:focus::-ms-fill-upper {
+input[type=range].sim-slider:focus::-ms-fill-upper {
   background: white;
 }
-}
-
-/*RED TRACK*/
-input[type=range].sim-sliderR {
-  -webkit-appearance: none;
-  margin: 120px 0;
-  margin-left:-465px;
-  /*width:400px;*/
-}
-input[type=range].sim-sliderR:focus {
-  outline: none;
-}
-input[type=range].sim-sliderR::-webkit-slider-runnable-track {
-  /*width: 100%;*/
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-  border-radius: 1.3px;
-  border: 0.2px solid #898989;
-}
-input[type=range].sim-sliderR::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #C67775;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -12px;
-}
-input[type=range].sim-sliderR:focus::-webkit-slider-runnable-track {
-}
-input[type=range].sim-sliderR::-moz-range-track {
-  /*width: 100%;*/
-  height: 7.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-  border-radius: 1.3px;
-  border: 0.2px solid #898989;
-  background:white;
-}
-input[type=range].sim-sliderR::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #C67775;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -12px;
-}
-input[type=range].sim-sliderR::-ms-track {
-  /*width: 100%;*/
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px;
-  color: white;
-}
-input[type=range].sim-sliderR::-ms-fill-lower {
-  background: white;
-  border: 0.2px solid #898989;
-  border-radius: 1.3px;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-}
-input[type=range].sim-sliderR::-ms-fill-upper {
-  background: white;
-  border: 0.2px solid #898989;
-  border-radius: 1.3px;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-}
-input[type=range].sim-sliderR::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #C67775;
-  cursor: pointer;
-}
-input[type=range].sim-sliderR:focus::-ms-fill-lower {
-  background: white;
-}
-input[type=range].sim-sliderR:focus::-ms-fill-upper {
-  background: white;
-}
-@media screen and (min-width: 40.5em) {
-  input[type=range].sim-sliderR {
-  -webkit-appearance: none;
-  margin: 18px 0;
-  /*width:400px;*//*adjust of slider here*/
-}
-input[type=range].sim-sliderR:focus {
-  outline: none;
-}
-input[type=range].sim-sliderR::-webkit-slider-runnable-track {
-  /*width: 100%;*/
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-  border-radius: 1.3px;
-  border: 0.2px solid #898989;
-}
-input[type=range].sim-sliderR::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 25px;
-  width: 18px;
-  border-radius: 3px;
-  background: #f1a3a1;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -10px;
-}
-input[type=range].sim-sliderR:focus::-webkit-slider-runnable-track {
-}
-input[type=range].sim-sliderR::-moz-range-track {
-  /*width: 100%;*/
-  height: 7.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-  border-radius: 1.3px;
-  border: 0.2px solid #898989;
-  background:white;
-}
-input[type=range].sim-sliderR::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #f6cbca;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -12px;
-}
-input[type=range].sim-sliderR::-ms-track {
-  /*width: 100%;*/
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px;
-  color: white;
-}
-input[type=range].sim-sliderR::-ms-fill-lower {
-  background: white;
-  border: 0.2px solid #898989;
-  border-radius: 1.3px;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-}
-input[type=range].sim-sliderR::-ms-fill-upper {
-  background: white;
-  border: 0.2px solid #898989;
-  border-radius: 1.3px;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-}
-input[type=range].sim-sliderR::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #f6cbca;
-  cursor: pointer;
-}
-input[type=range].sim-sliderR:focus::-ms-fill-lower {
-  background: white;
-}
-input[type=range].sim-sliderR:focus::-ms-fill-upper {
-  background: white;
-}
-}
-
-/*GRAY TRACK*/
-
-input[type=range].sim-sliderG {
-  -webkit-appearance: none;
-  margin: 150px 0;
-  margin-left:-50px;
-  /*width:400px;*/
-}
-input[type=range].sim-sliderG:focus {
-  outline: none;
-}
-input[type=range].sim-sliderG::-webkit-slider-runnable-track {
-  /*width: 100%;*/
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-  border-radius: 1.3px;
-  border: 0.2px solid #898989;
-}
-input[type=range].sim-sliderG::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #e6e6e6;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -12px;
-}
-input[type=range].sim-sliderG:focus::-webkit-slider-runnable-track {
-}
-input[type=range].sim-sliderG::-moz-range-track {
-  /*width: 100%;*/
-  height: 7.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-  border-radius: 1.3px;
-  border: 0.2px solid #898989;
-  background:white;
-}
-input[type=range].sim-sliderG::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #e6e6e6;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -12px;
-}
-input[type=range].sim-sliderG::-ms-track {
-  /*width: 100%;*/
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px;
-  color: white;
-}
-input[type=range].sim-sliderG::-ms-fill-lower {
-  background: white;
-  border: 0.2px solid #898989;
-  border-radius: 1.3px;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-}
-input[type=range].sim-sliderG::-ms-fill-upper {
-  background: white;
-  border: 0.2px solid #898989;
-  border-radius: 1.3px;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-}
-input[type=range].sim-sliderG::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #e6e6e6;
-  cursor: pointer;
-}
-input[type=range].sim-sliderG:focus::-ms-fill-lower {
-  background: white;
-}
-input[type=range].sim-sliderG:focus::-ms-fill-upper {
-  background: white;
-}
-@media screen and (min-width: 40.5em) {
-  input[type=range].sim-sliderG {
-  -webkit-appearance: none;
-  margin: 18px 0;
-  /*width:400px;*//*adjust of slider here*/
-}
-input[type=range].sim-sliderG:focus {
-  outline: none;
-}
-input[type=range].sim-sliderG::-webkit-slider-runnable-track {
-  /*width: 100%;*/
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-  border-radius: 1.3px;
-  border: 0.2px solid #898989;
-}
-input[type=range].sim-sliderG::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 25px;
-  width: 18px;
-  border-radius: 3px;
-  background: #e6e6e6;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -10px;
-}
-input[type=range].sim-sliderG:focus::-webkit-slider-runnable-track {
-}
-input[type=range].sim-sliderG::-moz-range-track {
-  /*width: 100%;*/
-  height: 7.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-  border-radius: 1.3px;
-  border: 0.2px solid #898989;
-  background:white;
-}
-input[type=range].sim-sliderG::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #9a9a9a;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -12px;
-}
-input[type=range].sim-sliderG::-ms-track {
-  /*width: 100%;*/
-  height: 8.4px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px;
-  color: white;
-}
-input[type=range].sim-sliderG::-ms-fill-lower {
-  background: white;
-  border: 0.2px solid #898989;
-  border-radius: 1.3px;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-}
-input[type=range].sim-sliderG::-ms-fill-upper {
-  background: white;
-  border: 0.2px solid #898989;
-  border-radius: 1.3px;
-  box-shadow: 1px 1px 1px #898989, 0px 0px 1px #0d0d0d;
-}
-input[type=range].sim-sliderG::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 30px;
-  width: 20px;
-  border-radius: 3px;
-  background: #9a9a9a;
-  cursor: pointer;
-}
-input[type=range].sim-sliderG:focus::-ms-fill-lower {
-  background: white;
-}
-input[type=range].sim-sliderG:focus::-ms-fill-upper {
-  background: white;
-}
-}
 
 
-/* ON AND OFF SWITCH*/
-.onoffswitch {
-    position: absolute; top:320px;left:25px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitch-checkbox {
-    display: none;
-}
-.onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid a; border-radius: 8px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-
-}
-.onoffswitch-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 21px; padding: 0; line-height: 21px;
-    font-size: 13px; color: white; font-family: Helvetica, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-    content: "ON";
-    padding-left: 8px;
-    padding-right: 2px;
-    background-color: #94c6d8; color: #FFFFFF;
-    
-}
-.onoffswitch-inner:after {
-    content: "OFF";
-    padding-right: 5px;
-    background-color: #a5a5a5; color: #FFFFFF;
-    text-align: right;
-    
-}
-.onoffswitch-switch {
-    display: block; width: 33px; margin: -6px;
-    background: #A1A1A1;
-    position: absolute; top: 0; bottom: 0;
-    right: 41px;
-    border:1px solid #a1a1a1; a; border-radius: 8px;
-    transition: all 0.2s ease-in 0s;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #a1a1a1;
-
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
+input[type=range].sim-slider.red::-webkit-slider-thumb{
+	background: #C67775;
 }
 
-@media screen and (min-width: 40.5em) {
-.onoffswitch {
-    position: absolute; top:160px;left:20px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitch-checkbox {
-    display: none;
-}
-.onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid a; border-radius: 8px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-
-}
-.onoffswitch-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 21px; padding: 0; line-height: 21px;
-    font-size: 13px; color: white; font-family: Helvetica, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-    content: "ON";
-    padding-left: 9px;
-    padding-right:2px;
-    background-color: #94c6d8; color: #FFFFFF;
-    
-}
-.onoffswitch-inner:after {
-    content: "OFF";
-    padding-right: 5px;
-    background-color: #a5a5a5; color: #FFFFFF;
-    text-align: right;
-    
-}
-.onoffswitch-switch {
-    display: block; width: 33px; margin: -6px;
-    background: #e6e6e6;
-    position: absolute; top: 0; bottom: 0;
-    right: 41px;
-    border:1px solid #a1a1a1; a; border-radius: 8px;
-    transition: all 0.2s ease-in 0s;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #a1a1a1;
-
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px; 
-}
-}
-/* THE ON AND OFF SWITCHES RED */
-.onoffswitchR {
-    position: absolute; top:320px;left:165px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitchR-checkbox {
-    display: none;
-}
-.onoffswitchR-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid a; border-radius: 8px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-
-}
-.onoffswitchR-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitchR-inner:before, .onoffswitchR-inner:after {
-    display: block; float: left; width: 50%; height: 21px; padding: 0; line-height: 21px;
-    font-size: 13px; color: white; font-family: Helvetica, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitchR-inner:before {
-    content: "ON";
-    padding-left: 8px;
-    padding-right: 2px;
-    background-color: #9a9a9a; color: #FFFFFF;
-    
-}
-.onoffswitchR-inner:after {
-    content: "OFF";
-    padding-right: 5px;
-    background-color: #747474; color: #FFFFFF;
-    text-align: right;
-    
-}
-.onoffswitchR-switch {
-    display: block; width: 33px; margin: -6px;
-    background: #e6e6e6;
-    position: absolute; top: 0; bottom: 0;
-    right: 41px;
-    border:1px solid #a1a1a1; a; border-radius: 8px;
-    transition: all 0.2s ease-in 0s;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #a1a1a1;
-
-}
-.onoffswitchR-checkbox:checked + .onoffswitchR-label .onoffswitchR-inner {
-    margin-left: 0;
-}
-.onoffswitchR-checkbox:checked + .onoffswitchR-label .onoffswitchR-switch {
-    right: 0px; 
-}
-@media screen and (min-width: 40.5em) {
-.onoffswitchR {
-    position: absolute; top:160px;left:600px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitchR-checkbox {
-    display: none;
-}
-.onoffswitchR-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid a; border-radius: 8px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-
-}
-.onoffswitchR-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitchR-inner:before, .onoffswitchR-inner:after {
-    display: block; float: left; width: 50%; height: 21px; padding: 0; line-height: 21px;
-    font-size: 13px; color: white; font-family: Helvetica, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitchR-inner:before {
-    content: "ON";
-    padding-left: 9px;
-    padding-right:2px;
-    background-color: #9a9a9a; color: #FFFFFF;
-    
-}
-.onoffswitchR-inner:after {
-    content: "OFF";
-    padding-right: 5px;
-    background-color: #747474; color: #FFFFFF;
-    text-align: right;
-    
-}
-.onoffswitchR-switch {
-    display: block; width: 33px; margin: -6px;
-    background: #e6e6e6;
-    position: absolute; top: 0; bottom: 0;
-    right: 41px;
-    border:1px solid #a1a1a1; a; border-radius: 8px;
-    transition: all 0.2s ease-in 0s;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #a1a1a1;
-
-}
-.onoffswitchR-checkbox:checked + .onoffswitchR-label .onoffswitchR-inner {
-    margin-left: 0;
-}
-.onoffswitchR-checkbox:checked + .onoffswitchR-label .onoffswitchR-switch {
-    right: 0px; 
-}
+input[type=range].sim-slider.red::-moz-range-thumb{
+	background: #C67775;
 }
 
-/* THE ON AND OFF SWITCHES GRAY */
-.onoffswitchG {
-    position: absolute; top:320px;left:290px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitchG-checkbox {
-    display: none;
-}
-.onoffswitchG-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid a; border-radius: 8px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-
-}
-.onoffswitchG-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitchG-inner:before, .onoffswitchG-inner:after {
-    display: block; float: left; width: 50%; height: 21px; padding: 0; line-height: 21px;
-    font-size: 13px; color: white; font-family: Helvetica, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitchG-inner:before {
-    content: "ON";
-    padding-left: 8px;
-    padding-right: 2px;
-    background-color: #9a9a9a; color: #FFFFFF;
-    
-}
-.onoffswitchG-inner:after {
-    content: "OFF";
-    padding-right: 5px;
-    background-color: #747474; color: #FFFFFF;
-    text-align: right;
-    
-}
-.onoffswitchG-switch {
-    display: block; width: 33px; margin: -6px;
-    background: #e6e6e6;
-    position: absolute; top: 0; bottom: 0;
-    right: 41px;
-    border:1px solid #a1a1a1; a; border-radius: 8px;
-    transition: all 0.2s ease-in 0s;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #a1a1a1;
-
-}
-.onoffswitchG-checkbox:checked + .onoffswitchG-label .onoffswitchG-inner {
-    margin-left: 0;
-}
-.onoffswitchG-checkbox:checked + .onoffswitchG-label .onoffswitchG-switch {
-    right: 0px; 
-}
-@media screen and (min-width: 40.5em) {
-.onoffswitchG {
-    position: absolute; top:160px;left:300px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitchG-checkbox {
-    display: none;
-}
-.onoffswitchG-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid a; border-radius: 8px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-
-}
-.onoffswitchG-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitchG-inner:before, .onoffswitchG-inner:after {
-    display: block; float: left; width: 50%; height: 21px; padding: 0; line-height: 21px;
-    font-size: 13px; color: white; font-family: Helvetica, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitchG-inner:before {
-    content: "ON";
-    padding-left: 9px;
-    padding-right:2px;
-    background-color: #9a9a9a; color: #FFFFFF;
-    
-}
-.onoffswitchG-inner:after {
-    content: "OFF";
-    padding-right: 5px;
-    background-color: #747474; color: #FFFFFF;
-    text-align: right;
-    
-}
-.onoffswitchG-switch {
-    display: block; width: 33px; margin: -6px;
-    background: #e6e6e6;
-    position: absolute; top: 0; bottom: 0;
-    right: 41px;
-    border:1px solid #a1a1a1; a; border-radius: 8px;
-    transition: all 0.2s ease-in 0s;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #a1a1a1;
-
-}
-.onoffswitchG-checkbox:checked + .onoffswitchG-label .onoffswitchG-inner {
-    margin-left: 0;
-}
-.onoffswitchG-checkbox:checked + .onoffswitchG-label .onoffswitchG-switch {
-    right: 0px; 
-}
+input[type=range].sim-slider.red::-ms-thumb{
+	background: #C67775;
 }
 
+input[type=range].sim-slider.gray::-webkit-slider-thumb{
+	background: #e6e6e6;
+}
+
+input[type=range].sim-slider.gray::-moz-range-thumb{
+	background: #e6e6e6;
+}
+
+input[type=range].sim-slider.gray::-ms-thumb{
+	background: #e6e6e6;
+}
+}
 
 /* SIM BUTTON */
 .sim-button {
-  margin:360px 0;
-  display: inline-block;
   width:100px;
   padding: 15px 25px;
   font-size: 15px;
@@ -963,7 +230,9 @@ input[type=range].sim-sliderG:focus::-ms-fill-upper {
   box-shadow: 0 9px #999;
 }
 
-.sim-button:hover {background-color: #80a7b5}
+.sim-button:hover {
+	background-color: #80a7b5
+}
 
 .sim-button:active {
   background-color: #80a7b5;
@@ -972,7 +241,6 @@ input[type=range].sim-sliderG:focus::-ms-fill-upper {
 }
 
 .sim-button.red {
-  margin-left:-450px;
   background-color: #b27775;
 }
 
@@ -983,7 +251,6 @@ input[type=range].sim-sliderG:focus::-ms-fill-upper {
 }
 
 .sim-button.gray{
-	margin-left:-20px;
 	background-color: #747474;
 }
 
@@ -995,8 +262,6 @@ input[type=range].sim-sliderG:focus::-ms-fill-upper {
 
 @media screen and (min-width: 40.5em) {
 .sim-button {
-  margin:3px 0;
-  display: inline-block;
   width:100px;
   padding: 15px 25px;
   font-size: 15px;
@@ -1010,9 +275,10 @@ input[type=range].sim-sliderG:focus::-ms-fill-upper {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+	letter-spacing: 1px;
 }
 
-.sim-button:hover {background-color: #80a7b5l;}
+.sim-button:hover {background-color: #80a7b5;}
 
 .sim-button:active {
   background-color: #80a7b5;
@@ -1020,24 +286,130 @@ input[type=range].sim-sliderG:focus::-ms-fill-upper {
   transform: translateY(4px);
 }
 
-.sim-button.red{
-	margin:3px 0;
-	background-color: #b27775;
 }
 
-.sim-button.red:hover{background-color: #9f4b48;}
+/*Switches (which are really just checkboxes)*/
 
-.sim-button.red:active {
-  background-color: #9f4b48;
+.sim-switch input[type=checkbox] {
+    -webkit-user-select:none;
+		-moz-user-select:none;
+		-ms-user-select: none;
+		letter-spacing: 2px;
 }
-.sim-button.gray{
-	margin:3px 0;
-	background-color: #747474;
+.sim-switch input[type=checkbox] {
+    display: none;
 }
 
-.sim-button.gray:hover{background-color: #58585a;}
-
-.sim-button.gray:active {
-  background-color: #58585a;
+.sim-switch input[type=checkbox] + label {
+	display: block;
+	overflow: hidden;
+  white-space: nowrap;
+	cursor: pointer;
+	border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	font-size: 15px;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+	padding-top:3px;
+	padding-bottom: 3px;
 }
+
+.sim-switch input[type=checkbox] + label:before {
+	content: "";
+	padding-left: 9px;
+	padding-right: 6px;
+	background-color: #94c6d8; color: #FFFFFF;
+	display: block; width: 25px; margin: -6px;
+	background: #94c6d8;
+	position: absolute; top: 0; bottom: 0;
+	right: 55px;
+	border:1px solid #a1a1a1; a; border-radius: 8px;
+	transition: all 0.2s ease-in 0s;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #a1a1a1;
+}
+
+.sim-switch input[type=checkbox]:checked + label:before {
+	right: 10px;
+}
+
+.sim-switch input[type=checkbox] + label:after {
+	content: "ON OFF";
+	padding: 10px 12px;
+	background-color: #a5a5a5; color: #FFFFFF;
+	text-align: right;
+
+}
+
+.sim-switch.red input[type=checkbox] + label:before{
+		background: #C67775;
+}
+
+.sim-switch.gray input[type=checkbox] + label:before{
+		background: #747474;
+}
+
+
+.sim-radio input[type=radio] {
+	display:none;
+}
+
+/* Radio boxes */
+
+.sim-radio input[type=radio] + label:before {
+	content: "";
+	display: inline-block;
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	vertical-align:middle;
+	margin-right: 8px;
+	background-color: #aaa;
+	/*box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);*/
+	border-radius: 8px;
+	border: thin solid black;
+}
+
+.sim-radio input[type=radio]:checked + label:before {
+	content: "\2022"; /* Bullet */
+	color:#94c6d8;
+	background-color: #fff;
+	font-size:1.8em;
+	text-align:center;
+	line-height:16px;
+	text-shadow:0px 0px 3px #eee;
+
+}
+
+.sim-radio input[type=radio] + label {
+margin: 20px;
+padding: 10px;
+border: 2px solid #747474;
+border-radius: 5px;
+cursor: pointer;
+background: #fff;
+
+color:#000000;
+font-size: 15px;
+font-family:Helvetica, sans-serif;
+font-weight:bold;
+}
+.sim-radio input[type=radio]:checked + label {
+background-color: #94c6d8;
+}
+.sim-radio.gray input[type=radio]:checked + label {
+background-color: #747474;
+}
+.sim-radio.red input[type=radio]:checked + label {
+	background-color: #C67775;
+}
+.sim-radio.gray input[type=radio]:checked + label:before {
+	color: #747474;
+}
+.sim-radio.red input[type=radio]:checked + label:before {
+	color: #C67775;
+}
+.sim-radio.vertical input[type=radio] + label {
+  display: block;
+  clear:both;
 }
