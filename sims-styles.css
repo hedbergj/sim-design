@@ -303,7 +303,7 @@ input[type=range].sim-slider.gray::-ms-thumb{
 .sim-switch input[type=checkbox] + label {
 	display: block;
 	overflow: hidden;
-  white-space: nowrap;
+
 	cursor: pointer;
 	border: 2px solid white;
   border-radius: 8px;
@@ -313,12 +313,13 @@ input[type=range].sim-slider.gray::-ms-thumb{
   font-weight:bold;
 	padding-top:3px;
 	padding-bottom: 3px;
+
 }
 
 .sim-switch input[type=checkbox] + label:before {
 	content: "";
 	padding-left: 9px;
-	padding-right: 6px;
+	padding-right: 9px;
 	background-color: #94c6d8; color: #FFFFFF;
 	display: block; width: 25px; margin: -6px;
 	background: #94c6d8;
@@ -330,7 +331,7 @@ input[type=range].sim-slider.gray::-ms-thumb{
 }
 
 .sim-switch input[type=checkbox]:checked + label:before {
-	right: 10px;
+	right: 6px;
 }
 
 .sim-switch input[type=checkbox] + label:after {
