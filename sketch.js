@@ -64,9 +64,9 @@ function setup() {
   radio = createRadio();
 
   radio.position(20,330);
-  radio.option('orange', 'orange');
-  radio.option('banana', 'yellow');
-  radio.option('eggplant', 'purple');
+  radio.option('Orange', 'orange');
+  radio.option('Banana', 'yellow');
+  radio.option('Eggplant', 'purple');
 
   radio.class('sim-radio');
   radio.changed(switchColor);
