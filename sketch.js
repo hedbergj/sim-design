@@ -4,6 +4,7 @@ var genbutton3;
 var genslider;
 var genslider2;
 var genslider3;
+var genslider4;
 var switch1;
 var running = true;
 var fruit;
@@ -32,6 +33,9 @@ function setup() {
   genbutton3.position(400,30);
   genbutton3.class("sim-button red");
 
+  genslider4 = createSlider(1, 10, 1);
+  genslider4.position(483,375);
+  genslider4.class("sim-slider vertical");
 
 
   //make sliders
