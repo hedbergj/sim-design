@@ -64,6 +64,13 @@ or
 aSlider.class("sim slider gray")
 ```
 
+for vertical sliders just add the subclass "vertical":
+
+```
+aSlider.class("sim slider gray vertical")
+```
+
+
 ### Radio boxes
 
 The allow the user to select one option from several choices
