@@ -211,6 +211,11 @@ input[type=range].sim-slider.gray::-moz-range-thumb{
 input[type=range].sim-slider.gray::-ms-thumb{
 	background: #e6e6e6;
 }
+
+input[type=range].sim-slider.vertical{    
+transform: rotate(270deg);
+}
+
 }
 
 /* SIM BUTTON */
