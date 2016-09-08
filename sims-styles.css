@@ -1,4 +1,5 @@
-
+/*general*/
+html {overflow:hidden;}
 /*sliders*/
 
 input[type=range].sim-slider {
@@ -212,7 +213,7 @@ input[type=range].sim-slider.gray::-ms-thumb{
 	background: #e6e6e6;
 }
 
-input[type=range].sim-slider.vertical{    
+input[type=range].sim-slider.vertical{
 transform: rotate(270deg);
 }
 
@@ -374,7 +375,7 @@ transform: rotate(270deg);
 	box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .3);
 	border-radius: 8px;
 	border: thin solid black;
-	
+
 }
 
 .sim-radio input[type=radio]:checked + label:before {
@@ -385,7 +386,7 @@ transform: rotate(270deg);
 	text-align:center;
 	line-height:16px;
 	text-shadow:0px 0px 3px #eee;
-	
+
 
 }
 
