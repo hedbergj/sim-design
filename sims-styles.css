@@ -331,7 +331,8 @@ transform: rotate(270deg);
 	background: #94c6d8;
 	position: absolute; top: 0; bottom: 0;
 	right: 53px;
-	border:1px solid #a1a1a1; a; border-radius: 8px;
+	border:1px solid #a1a1a1;
+  border-radius: 8px;
 	transition: all 0.2s ease-in 0s;
 	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #a1a1a1;
 }
