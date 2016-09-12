@@ -93,6 +93,31 @@ input[type=range].sim-slider:focus::-ms-fill-upper {
   background: white;
 }
 
+
+input[type=range].sim-slider.red::-webkit-slider-thumb{
+	background: #C67775;
+}
+
+input[type=range].sim-slider.red::-moz-range-thumb{
+	background: #C67775;
+}
+
+input[type=range].sim-slider.red::-ms-thumb{
+	background: #C67775;
+}
+
+input[type=range].sim-slider.gray::-webkit-slider-thumb{
+	background: #e6e6e6;
+}
+
+input[type=range].sim-slider.gray::-moz-range-thumb{
+	background: #e6e6e6;
+}
+
+input[type=range].sim-slider.gray::-ms-thumb{
+	background: #e6e6e6;
+}
+
 @media screen and (min-width: 40.5em) {
   input[type=range].sim-slider {
   -webkit-appearance: none;
