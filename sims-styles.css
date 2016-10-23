@@ -293,7 +293,17 @@ transform: rotate(270deg);
 .sim-button.gray:active {
   background-color: #58585a;
 }
-
+.sim-button.slim {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 8px;
+  box-shadow: 0 5px #999;
+}
+.sim-button.slim:active {
+  background-color: #80a7b5;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
 @media screen and (min-width: 40.5em) {
 .sim-button {
   width:100px;
@@ -318,6 +328,10 @@ transform: rotate(270deg);
   background-color: #80a7b5;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.sim-button.slim {
+  padding: 4px 8px;
 }
 
 }
