@@ -97,7 +97,7 @@ aRadio.class("sim-radio red");
 aRadio.class("sim-radio gray");
 ```
 
-
+a
 Link to the live page:
 
 [https://ccny-physics-sims.github.io/sim-design/](https://ccny-physics-sims.github.io/sim-design/)
